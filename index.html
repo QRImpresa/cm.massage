@@ -1,134 +1,144 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CM Massage – Versioni Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christian Mero · Trattamenti del Benessere</title>
 
-  <style>
-    /* ------------------------- RESET ------------------------- */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; color: #333; background: #fafafa; line-height: 1.5; }
+  <link rel="stylesheet" href="css/style.css">
 
-    h2 { text-align: center; margin-bottom: 18px; font-size: 2rem; }
-    section { padding: 60px 20px; }
-
-    /* ------------------------- VERSIONE 1 – MORBIDA ANIMATA ------------------------- */
-    .soft-hero {
-      background: linear-gradient(120deg, #dfe9f3, #ffffff);
-      padding: 80px 20px;
-      text-align: center;
-      animation: fadeIn 1.4s ease;
-    }
-    .soft-hero h1 {
-      font-size: 2.7rem;
-      opacity: 0;
-      animation: slideDown 1.2s forwards;
-    }
-    .soft-boxes {
-      display: flex; flex-wrap: wrap; gap: 20px;
-      justify-content: center; margin-top: 30px;
-    }
-    .soft-box {
-      background: white; padding: 25px; width: 280px;
-      border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.09);
-      opacity: 0; transform: translateY(20px);
-      animation: fadeUp 1s forwards; animation-delay: 0.2s;
-    }
-
-    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @keyframes slideDown { from { transform: translateY(-20px); opacity:0; } to { transform: translateY(0); opacity:1; } }
-    @keyframes fadeUp { to { opacity:1; transform: translateY(0); } }
-
-    /* ------------------------- VERSIONE 2 – LUSSO SPA ------------------------- */
-    .luxury {
-      background: #f2efe9;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    .lux-card {
-      max-width: 700px; margin: auto; background: white;
-      padding: 40px; border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      border: 1px solid #e8e5dd;
-    }
-    .lux-card h3 {
-      font-size: 2.3rem; margin-bottom: 16px;
-      color: #7a663e; letter-spacing: 1px;
-    }
-    .lux-card p { font-size: 1.1rem; color: #5a533f; }
-
-    /* ------------------------- VERSIONE 3 – PARALLASSE ------------------------- */
-    .parallax-section {
-      height: 70vh;
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      display: flex; 
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 0 3px 12px rgba(0,0,0,0.5);
-      font-size: 2.4rem;
-      font-weight: bold;
-    }
-
-    .parallax-text-block {
-      padding: 60px 20px;
-      max-width: 700px; margin: auto;
-      text-align: center; font-size: 1.2rem;
-    }
-  </style>
-
+  <!-- FONT LUSSUOSO -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- ------------------------------------------------------------
-       VERSIONE 1 — MORBIDA, FLUIDA, ANIMATA
-  ------------------------------------------------------------ -->
-  <section class="soft-hero">
-    <h1>Benvenuto nel Massaggio Perfetto</h1>
-    <p>Versione con animazioni morbide e atmosfera rilassante.</p>
-    <div class="soft-boxes">
-      <div class="soft-box">Massaggi rilassanti</div>
-      <div class="soft-box">Trattamenti personalizzati</div>
-      <div class="soft-box">Ambiente sereno</div>
+  <!-- TOPBAR -->
+  <header class="lux-topbar">
+    <div class="lux-topbar-inner">
+      <div class="lux-brand">
+        <span class="lux-logo">CM</span>
+        <div class="lux-brand-text">
+          <span class="lux-name">Christian Mero</span>
+          <span class="lux-sub">Trattamenti del Benessere</span>
+        </div>
+      </div>
+      <a class="lux-call" href="tel:+393397858885">Chiama Ora</a>
     </div>
-  </section>
+  </header>
 
+  <main>
 
+    <!-- HERO -->
+    <section class="lux-hero">
+      <div class="lux-hero-inner">
+        <p class="lux-location">Manduria · Studio Benessere</p>
+        <h1 class="lux-title">Trattamenti del Benessere</h1>
+        <p class="lux-subtitle">
+          Massaggi mirati per sciogliere tensioni, ridurre lo stress e ripristinare l’armonia psicofisica.
+        </p>
+      </div>
+    </section>
 
-  <!-- ------------------------------------------------------------
-       VERSIONE 2 — LUSSO SPA PREMIUM
-  ------------------------------------------------------------ -->
-  <section class="luxury">
-    <div class="lux-card">
-      <h3>Esperienza Spa Premium</h3>
-      <p>
-        Un design elegante che richiama le spa più esclusive.
-        Toni caldi, materiali nobili e una presentazione lussuosa.
+    <!-- TRATTAMENTI -->
+    <section class="lux-section">
+      <h2 class="lux-section-title">I Trattamenti</h2>
+
+      <div class="lux-grid">
+        <ul class="lux-list">
+          <li>Decontratturante</li>
+          <li>Antistress Rilassante</li>
+          <li>Linfodrenante</li>
+          <li>Madoterapia</li>
+          <li>Hot Stone Massage</li>
+          <li>Riflessologia Plantare</li>
+        </ul>
+
+        <div class="lux-gallery">
+          <img src="imgs/flyer.jpg" alt="" class="lux-img">
+          <img src="imgs/massaggio-1.jpg" alt="" class="lux-img">
+          <img src="imgs/massaggio-2.jpg" alt="" class="lux-img">
+        </div>
+
+        <ul class="lux-list">
+          <li>Rilassamento Cervicale</li>
+          <li>Total Body Combinato</li>
+          <li>Massaggio Viso (pietre calde, bava di lumaca)</li>
+          <li>Consulenze corpo</li>
+          <li>Massaggio Sportivo</li>
+        </ul>
+      </div>
+
+      <p class="lux-info">
+        Ricevo solo su appuntamento per garantire tranquillità, privacy e la massima cura.
       </p>
-    </div>
-  </section>
+    </section>
 
+    <!-- AMBIENTE -->
+    <section class="lux-section-alt">
+      <h2 class="lux-section-title">Un Ambiente Rilassante</h2>
+      <p class="lux-desc">
+        Luci soffuse, aromi delicati e musica ambient pensati per favorire il rilassamento profondo
+        e un’esperienza di totale rigenerazione.
+      </p>
+    </section>
 
+    <!-- LOCATION -->
+    <section class="lux-section">
+      <div class="lux-location-wrapper">
 
-  <!-- ------------------------------------------------------------
-       VERSIONE 3 — EFFETTO PARALLASSE
-  ------------------------------------------------------------ -->
-  <!-- Cambia questa immagine con una tua: /assets/img/tuafoto.jpg -->
-  <div class="parallax-section" style="background-image:url('assets/img/example-spa.jpg');">
-    CM Massage – Esperienza Naturale
-  </div>
+        <div class="lux-location-text">
+          <h2 class="lux-section-title">Dove Trovarmi</h2>
 
-  <div class="parallax-text-block">
-    Goditi una sezione con effetto parallasse che crea profondità
-    e un impatto visivo professionale.
-  </div>
+          <p class="lux-address">
+            Via Chidro, 17 · Manduria (TA)  
+            <span class="lux-muted">presso Body Angel</span>
+          </p>
 
-  <div class="parallax-section" style="background-image:url('assets/img/example-room.jpg');">
-    Rilassamento assoluto
-  </div>
+          <p class="lux-desc">
+            Studio facilmente raggiungibile, ambiente riservato e progettato per accoglierti al meglio.
+          </p>
 
+          <a class="lux-map-btn"
+             href="https://www.google.com/maps/search/?api=1&query=Via+Chidro+17+Manduria"
+             target="_blank" rel="noopener">
+            Apri in Google Maps
+          </a>
+        </div>
+
+        <div class="lux-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=INSERISCI_CODICE_EMBED_DI_VIA_CHIDRO_17"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="lux-cta">
+      <h2>Prenota il tuo trattamento</h2>
+      <p>Valutiamo insieme il percorso più adatto alle tue necessità.</p>
+
+      <a class="lux-cta-btn" href="tel:+393397858885">
+        Chiama Christian · 339 785 8885
+      </a>
+
+      <p class="lux-cta-note">
+        Manduria · Via Chidro, 17 (Body Angel) · Solo su appuntamento
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="lux-footer">
+    <p>© <span id="year"></span> Christian Mero · Trattamenti del Benessere</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

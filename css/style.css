@@ -166,10 +166,29 @@ body {
   color: var(--dark);
 }
 
-/* --------------------------------------------------
-   TRATTAMENTI
--------------------------------------------------- */
+/* TITOLO SEZIONE TRATTAMENTI CENTRATO E CON BACKGROUND BEIGE */
 
+.lux-section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: var(--dark);
+  text-align: center;
+  display: inline-block;
+  padding: 8px 22px;
+  background: var(--soft-bg);   /* beige chiaro */
+  border-radius: 999px;
+}
+
+/* Per centrare il titolo nella sezione */
+.lux-section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;           /* centra i contenuti principali */
+}
+
+/* Intro trattamenti già centrata */
 .lux-section-intro {
   max-width: 720px;
   font-size: 16px;
@@ -177,6 +196,8 @@ body {
   margin: 0 auto 30px;
   text-align: center;
 }
+
+/* GRID TRATTAMENTI + CENTRATURA TESTI NELLE CARD */
 
 .lux-grid {
   display: grid;
@@ -188,18 +209,30 @@ body {
   grid-template-columns: 1fr auto 1fr;
 }
 
+/* colonne card */
 .lux-treat-col {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
+/* CARD centrata e dinamica */
 .lux-treat-card {
   background: #fff;
-  border-radius: 10px;
-  padding: 12px 14px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
   border: 1px solid #f0e8dd;
+  text-align: center;                 /* testo centrato */
+  transition: transform 0.18s ease, 
+              box-shadow 0.18s ease,
+              border-color 0.18s ease;
+}
+
+.lux-treat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+  border-color: var(--light-gold);    /* effetto dinamico al passaggio */
 }
 
 .lux-treat-card h3 {
@@ -214,6 +247,7 @@ body {
   color: #555;
 }
 
+/* Galleria centrale invariata */
 .lux-gallery {
   display: flex;
   flex-direction: column;
@@ -221,12 +255,23 @@ body {
   max-width: 350px;
 }
 
-.lux-img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  animation: fadeSoft 1.2s ease;
+/* RESPONSIVE: le colonne si impilano ma restano centrate */
+
+@media (max-width: 900px) {
+  .lux-grid-treat {
+    grid-template-columns: 1fr;
+  }
+
+  .lux-gallery {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
+  .lux-treat-col {
+    gap: 12px;
+  }
 }
+
 
 /* --------------------------------------------------
    AMBIENCE

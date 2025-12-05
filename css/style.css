@@ -170,19 +170,48 @@ body {
    TRATTAMENTI
 -------------------------------------------------- */
 
+.lux-section-intro {
+  max-width: 720px;
+  font-size: 16px;
+  color: var(--muted);
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
 .lux-grid {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
   gap: 30px;
   align-items: flex-start;
 }
 
-.lux-list {
-  list-style: none;
-  font-size: 18px;
+.lux-grid-treat {
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.lux-treat-col {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+.lux-treat-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  border: 1px solid #f0e8dd;
+}
+
+.lux-treat-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: var(--dark);
+}
+
+.lux-treat-card p {
+  font-size: 14px;
+  color: #555;
 }
 
 .lux-gallery {
@@ -195,15 +224,8 @@ body {
 .lux-img {
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   animation: fadeSoft 1.2s ease;
-}
-
-.lux-info {
-  margin-top: 35px;
-  text-align: center;
-  color: #555;
-  font-size: 16px;
 }
 
 /* --------------------------------------------------

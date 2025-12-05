@@ -1,12 +1,13 @@
 :root {
   --bg: #f3f4f8;
   --card: #ffffff;
+  --card-alt: #eef2ff;
   --primary: #3b82f6;
   --primary-dark: #2563eb;
   --accent: #f97373;
   --text: #111827;
   --muted: #6b7280;
-  --radius-lg: 20px;
+  --radius-lg: 22px;
 }
 
 *,
@@ -30,7 +31,7 @@ body {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: linear-gradient(to right, rgba(243,244,246,0.9), rgba(219,234,254,0.9));
+  background: linear-gradient(to right, rgba(243,244,246,0.92), rgba(219,234,254,0.92));
   border-bottom: 1px solid rgba(209,213,219,0.7);
 }
 
@@ -89,7 +90,7 @@ body {
   box-shadow: 0 6px 18px rgba(37,99,235,0.15);
 }
 
-/* PAGE LAYOUT */
+/* PAGE / CARD */
 
 .page {
   max-width: 1040px;
@@ -97,25 +98,27 @@ body {
   padding: 24px 16px 48px;
 }
 
-/* HERO */
-
-.hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-  gap: 32px;
-  align-items: center;
-  margin-bottom: 32px;
+.card {
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 16px 40px rgba(15,23,42,0.15);
+  padding: 24px 20px 26px;
+  margin-bottom: 22px;
 }
 
-.hero-text h1 {
-  font-size: clamp(1.9rem, 3vw, 2.4rem);
-  margin: 8px 0 10px;
+.card-alt {
+  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
 }
 
-.hero-sub {
-  color: var(--muted);
-  font-size: 0.98rem;
-  max-width: 32rem;
+.card-cta {
+  text-align: center;
+}
+
+/* HERO CENTER */
+
+.hero-center {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .eyebrow {
@@ -126,24 +129,151 @@ body {
   font-weight: 600;
 }
 
-.hero-actions {
-  margin-top: 18px;
+h1 {
+  font-size: clamp(1.9rem, 3vw, 2.4rem);
+  margin: 8px 0 8px;
 }
 
-.btn-primary {
+.subtitle {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+/* TRATTAMENTI LAYOUT */
+
+.treatments-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: flex-start;
+  margin-top: 22px;
+}
+
+.treatments-col ul {
+  list-style: disc;
+  padding-left: 18px;
+  font-size: 0.95rem;
+}
+
+.treatments-col li {
+  margin-bottom: 8px;
+}
+
+.treatments-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.treatments-gallery figure {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(15,23,42,0.2);
+}
+
+.treatments-gallery img {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* TESTI SOTTO TRATTAMENTI */
+
+.appointment {
+  margin-top: 18px;
+  font-size: 0.96rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.ambience {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ambience h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.ambience p {
+  font-size: 0.96rem;
+  color: var(--muted);
+}
+
+/* LOCATION + MAPPA */
+
+.location {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  gap: 26px;
+  align-items: center;
+}
+
+.location-text h2 {
+  margin: 0 0 6px;
+}
+
+.location-address {
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.muted {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.92rem;
+}
+
+.location-note {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 10px 0 14px;
+}
+
+.btn-outline {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 20px;
+  padding: 9px 18px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #3b82f6, #6366f1);
-  color: #fff;
+  border: 1px solid rgba(17,24,39,0.12);
+  background: #fff;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.98rem;
-  box-shadow: 0 12px 28px rgba(59,130,246,0.35);
 }
 
-.hero-note {
-  margin-top: 6px;
-  font-size:
+.map-embed {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(15,23,42,0.25);
+  background: #000;
+  min-height: 230px;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 230px;
+  display: block;
+}
+
+/* CTA FINALE */
+
+.card-cta h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.card-cta p {
+  color: var(--muted);
+  font-size: 0.96rem;
+  margin-bottom: 14px;
+}
+
+.btn-primary {
+  display: inline

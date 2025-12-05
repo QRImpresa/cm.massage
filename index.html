@@ -1,159 +1,134 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Christian Mero – Trattamenti del Benessere</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CM Massage – Versioni Demo</title>
 
+  <style>
+    /* ------------------------- RESET ------------------------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #333; background: #fafafa; line-height: 1.5; }
+
+    h2 { text-align: center; margin-bottom: 18px; font-size: 2rem; }
+    section { padding: 60px 20px; }
+
+    /* ------------------------- VERSIONE 1 – MORBIDA ANIMATA ------------------------- */
+    .soft-hero {
+      background: linear-gradient(120deg, #dfe9f3, #ffffff);
+      padding: 80px 20px;
+      text-align: center;
+      animation: fadeIn 1.4s ease;
+    }
+    .soft-hero h1 {
+      font-size: 2.7rem;
+      opacity: 0;
+      animation: slideDown 1.2s forwards;
+    }
+    .soft-boxes {
+      display: flex; flex-wrap: wrap; gap: 20px;
+      justify-content: center; margin-top: 30px;
+    }
+    .soft-box {
+      background: white; padding: 25px; width: 280px;
+      border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+      opacity: 0; transform: translateY(20px);
+      animation: fadeUp 1s forwards; animation-delay: 0.2s;
+    }
+
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes slideDown { from { transform: translateY(-20px); opacity:0; } to { transform: translateY(0); opacity:1; } }
+    @keyframes fadeUp { to { opacity:1; transform: translateY(0); } }
+
+    /* ------------------------- VERSIONE 2 – LUSSO SPA ------------------------- */
+    .luxury {
+      background: #f2efe9;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .lux-card {
+      max-width: 700px; margin: auto; background: white;
+      padding: 40px; border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      border: 1px solid #e8e5dd;
+    }
+    .lux-card h3 {
+      font-size: 2.3rem; margin-bottom: 16px;
+      color: #7a663e; letter-spacing: 1px;
+    }
+    .lux-card p { font-size: 1.1rem; color: #5a533f; }
+
+    /* ------------------------- VERSIONE 3 – PARALLASSE ------------------------- */
+    .parallax-section {
+      height: 70vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+      font-size: 2.4rem;
+      font-weight: bold;
+    }
+
+    .parallax-text-block {
+      padding: 60px 20px;
+      max-width: 700px; margin: auto;
+      text-align: center; font-size: 1.2rem;
+    }
+  </style>
+
+</head>
 <body>
 
-  <!-- TOPBAR -->
-  <header class="topbar">
-    <div class="topbar-inner">
-      <div class="brand">
-        <span class="brand-logo">CM</span>
-        <div class="brand-text">
-          <span class="brand-name">Christian Mero</span>
-          <span class="brand-sub">Trattamenti del Benessere</span>
-        </div>
-      </div>
-      <a class="topbar-cta" href="tel:+393397858885">Chiama ora</a>
+  <!-- ------------------------------------------------------------
+       VERSIONE 1 — MORBIDA, FLUIDA, ANIMATA
+  ------------------------------------------------------------ -->
+  <section class="soft-hero">
+    <h1>Benvenuto nel Massaggio Perfetto</h1>
+    <p>Versione con animazioni morbide e atmosfera rilassante.</p>
+    <div class="soft-boxes">
+      <div class="soft-box">Massaggi rilassanti</div>
+      <div class="soft-box">Trattamenti personalizzati</div>
+      <div class="soft-box">Ambiente sereno</div>
     </div>
-  </header>
+  </section>
 
-  <main class="page">
 
-    <!-- HERO -->
-    <section class="card">
-      <div class="hero-center">
-        <p class="eyebrow">Manduria · Studio Benessere</p>
-        <h1>Trattamenti mirati per il tuo benessere</h1>
-        <p class="subtitle">
-          Massaggi professionali per sciogliere tensioni, alleggerire lo stress e ritrovare equilibrio psicofisico.
-        </p>
-      </div>
 
-      <!-- TRATTAMENTI -->
-      <section class="treatments-layout">
-
-        <!-- Lista sinistra -->
-        <div class="treatments-col">
-          <ul>
-            <li>Decontratturante</li>
-            <li>Massaggio Antistress</li>
-            <li>Linfodrenante</li>
-            <li>Madoterapia</li>
-            <li>Pietre Calde · Hot Stone</li>
-            <li>Riflessologia Plantare</li>
-          </ul>
-        </div>
-
-        <!-- Immagini al centro -->
-        <div class="treatments-gallery">
-          <figure>
-            <img src="imgs/flyer.jpg" alt="Studio benessere Christian Mero">
-          </figure>
-          <figure>
-            <img src="imgs/massaggio-1.jpg" alt="Massaggio rilassante">
-          </figure>
-          <figure>
-            <img src="imgs/massaggio-2.jpg" alt="Massaggio decontratturante">
-          </figure>
-        </div>
-
-        <!-- Lista destra -->
-        <div class="treatments-col">
-          <ul>
-            <li>Rilassamento Cervicale</li>
-            <li>Total Body Combinato</li>
-            <li>Massaggio Viso (pietre calde + bava di lumaca)</li>
-            <li>Consulenze corpo personalizzate</li>
-            <li>Massaggio Sportivo</li>
-          </ul>
-        </div>
-
-      </section>
-
-      <p class="appointment">
-        Ricevo solo su appuntamento per garantirti tranquillità, privacy e attenzione dedicata.
-      </p>
-
-      <!-- AMBIENTE -->
-      <section class="ambience">
-        <h2>Un ambiente curato e rilassante</h2>
-        <p>
-          Luci soffuse, musica leggera e trattamenti pensati per riportarti
-          in armonia con te stesso. Il luogo ideale per rigenerarti.
-        </p>
-      </section>
-    </section>
-
-    <!-- LOCATION -->
-    <section class="card card-alt">
-      <div class="location">
-
-        <div class="location-text">
-          <h2>Dove trovarmi</h2>
-
-          <p class="location-address">
-            Via Chidro, 17 · Manduria (TA)<br>
-            <span class="muted">presso Body Angel</span>
-          </p>
-
-          <p class="location-note">
-            Ambiente riservato, facilmente raggiungibile e ideale
-            per chi cerca professionalità e relax.
-          </p>
-
-          <a class="btn-outline"
-             href="https://www.google.com/maps/search/?api=1&query=Via+Chidro+17+Manduria"
-             target="_blank" rel="noopener">
-            Apri in Google Maps
-          </a>
-        </div>
-
-        <div class="map-embed">
-          <!-- Sostituisci con embed reale -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=INSERISCI_CODICE_EMBED_DI_VIA_CHIDRO_17"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CTA FINALE -->
-    <section class="card card-cta">
-      <h2>Prenota il tuo trattamento</h2>
+  <!-- ------------------------------------------------------------
+       VERSIONE 2 — LUSSO SPA PREMIUM
+  ------------------------------------------------------------ -->
+  <section class="luxury">
+    <div class="lux-card">
+      <h3>Esperienza Spa Premium</h3>
       <p>
-        Parliamo delle tue esigenze e troviamo il percorso più adatto al tuo benessere fisico e mentale.
+        Un design elegante che richiama le spa più esclusive.
+        Toni caldi, materiali nobili e una presentazione lussuosa.
       </p>
+    </div>
+  </section>
 
-      <a class="btn-primary btn-large" href="tel:+393397858885">
-        Chiama Christian · 339 785 8885
-      </a>
 
-      <p class="cta-note">
-        Manduria · Via Chidro, 17 (Body Angel) · Solo su appuntamento
-      </p>
-    </section>
 
-  </main>
+  <!-- ------------------------------------------------------------
+       VERSIONE 3 — EFFETTO PARALLASSE
+  ------------------------------------------------------------ -->
+  <!-- Cambia questa immagine con una tua: /assets/img/tuafoto.jpg -->
+  <div class="parallax-section" style="background-image:url('assets/img/example-spa.jpg');">
+    CM Massage – Esperienza Naturale
+  </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© <span id="year"></span> Christian Mero · Trattamenti del Benessere</p>
-  </footer>
+  <div class="parallax-text-block">
+    Goditi una sezione con effetto parallasse che crea profondità
+    e un impatto visivo professionale.
+  </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div class="parallax-section" style="background-image:url('assets/img/example-room.jpg');">
+    Rilassamento assoluto
+  </div>
 
 </body>
 </html>

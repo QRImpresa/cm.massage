@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trattamenti del Benessere - Christian Mero</title>
+  <title>Trattamenti del Benessere · Christian Mero</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- TOPBAR -->
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
@@ -21,32 +23,36 @@
   </header>
 
   <main class="page">
-    <!-- HERO + TRATTAMENTI -->
-    <section class="card">
+
+    <!-- HERO -->
+    <section class="card hero">
       <div class="hero-center">
-        <p class="eyebrow">Manduria · Studio benessere</p>
+        <p class="eyebrow">Manduria · Studio del Benessere</p>
         <h1>Trattamenti del Benessere</h1>
         <p class="subtitle">
           Massaggi mirati per sciogliere tensioni, ridurre lo stress e ritrovare equilibrio.
         </p>
       </div>
+    </section>
 
-      <section class="treatments-layout">
-        <!-- Colonna sinistra trattamenti -->
-        <div class="treatments-col">
-          <ul>
-            <li>Decontratturante</li>
-            <li>Antistress Rilassante</li>
-            <li>Linfodrenante</li>
-            <li>Madoterapia</li>
-            <li>Hot stone massage (pietre calde)</li>
-            <li>Riflessologia plantare</li>
-          </ul>
-        </div>
+    <!-- TRATTAMENTI + GALLERY -->
+    <section class="card treatments">
+      <h2>I trattamenti</h2>
+
+      <div class="treatments-layout">
+
+        <!-- Colonna sinistra -->
+        <ul class="treatments-col">
+          <li>Decontratturante</li>
+          <li>Antistress Rilassante</li>
+          <li>Linfodrenante</li>
+          <li>Madoterapia</li>
+          <li>Hot Stone (pietre calde)</li>
+          <li>Riflessologia plantare</li>
+        </ul>
 
         <!-- Immagini centrali -->
         <div class="treatments-gallery">
-          <!-- Sostituisci i nomi file con quelli reali nella cartella imgs -->
           <figure>
             <img src="imgs/flyer.jpg" alt="Trattamenti del benessere Christian Mero">
           </figure>
@@ -58,42 +64,40 @@
           </figure>
         </div>
 
-        <!-- Colonna destra trattamenti -->
-        <div class="treatments-col">
-          <ul>
-            <li>Rilassamento Cervicale</li>
-            <li>Total body Combinato</li>
-            <li>Massaggio viso con pietre calde e bava di lumaca</li>
-            <li>Consulenze trattamenti corpo</li>
-            <li>Massaggio sportivo</li>
-          </ul>
-        </div>
-      </section>
+        <!-- Colonna destra -->
+        <ul class="treatments-col">
+          <li>Rilassamento cervicale</li>
+          <li>Total Body combinato</li>
+          <li>Massaggio viso con pietre calde</li>
+          <li>Consulenze trattamenti corpo</li>
+          <li>Massaggio sportivo</li>
+        </ul>
+
+      </div>
 
       <p class="appointment">
-        Si riceve solo su appuntamento per garantirti tranquillità, privacy e la massima attenzione.
+        Ricevo solo su appuntamento per garantirti un ambiente tranquillo, privato e dedicato.
       </p>
-
-      <section class="ambience">
-        <h2>Un ambiente rilassante, pensato per te</h2>
-        <p>
-          Luci soffuse, musica leggera e trattamenti studiati per farti uscire rigenerato nel corpo e nella mente.
-        </p>
-      </section>
     </section>
 
-    <!-- DOVE TROVARMI + MAPPA -->
-    <section class="card card-alt">
+    <!-- AMBIENTE -->
+    <section class="card ambience">
+      <h2>Un ambiente che favorisce il rilassamento</h2>
+      <p>
+        Luci soffuse, musica leggera e trattamenti personalizzati per farti uscire rigenerato nel corpo e nella mente.
+      </p>
+    </section>
+
+    <!-- DOVE TROVARMI -->
+    <section class="card card-alt location-card">
       <div class="location">
         <div class="location-text">
           <h2>Dove trovarmi</h2>
           <p class="location-address">
-            Via Chidro, 17 · Manduria (TA)<br>
+            Via Chidro, 17 · Manduria (TA)  
             <span class="muted">presso Body Angel</span>
           </p>
-          <p class="location-note">
-            Lo studio è facilmente raggiungibile e dotato di un ambiente riservato, pensato per farti sentire a tuo agio.
-          </p>
+
           <a class="btn-outline"
              href="https://www.google.com/maps/search/?api=1&query=Via+Chidro+17+Manduria"
              target="_blank" rel="noopener">
@@ -102,39 +106,42 @@
         </div>
 
         <div class="map-embed">
-          <!-- Sostituisci SRC con il codice embed reale di Google Maps -->
           <iframe
             src="https://www.google.com/maps/embed?pb=INSERISCI_CODICE_EMBED_DI_VIA_CHIDRO_17"
             style="border:0;"
-            allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
 
-    <!-- CTA FINALE -->
+    <!-- CTA -->
     <section class="card card-cta">
       <h2>Prenota il tuo trattamento</h2>
       <p>
-        Parliamo delle tue esigenze e scegliamo insieme il percorso di benessere più adatto a te.
+        Parliamo delle tue esigenze e scegliamo insieme il percorso più adatto a te.
       </p>
+
       <a class="btn-primary btn-large" href="tel:+393397858885">
         Chiama Christian · 339 785 8885
       </a>
+
       <p class="cta-note">
-        Manduria · Via Chidro, 17 (Body Angel) · Solo su appuntamento
+        Manduria · Via Chidro 17 (Body Angel) · Solo su appuntamento
       </p>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>© <span id="year"></span> Christian Mero · Trattamenti del Benessere</p>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>

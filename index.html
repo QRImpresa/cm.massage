@@ -21,65 +21,78 @@
   </header>
 
   <main class="page">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Manduria · Body Angel</p>
-        <h1>Massaggi per sciogliere tensioni, stress e dolori muscolari.</h1>
-        <p class="hero-sub">
-          Trattamenti personalizzati per benessere, postura e rilassamento profondo.
+    <!-- HERO + TRATTAMENTI -->
+    <section class="card">
+      <div class="hero-center">
+        <p class="eyebrow">Manduria · Studio benessere</p>
+        <h1>Trattamenti del Benessere</h1>
+        <p class="subtitle">
+          Massaggi mirati per sciogliere tensioni, ridurre lo stress e ritrovare equilibrio.
         </p>
-        <div class="hero-actions">
-          <a class="btn-primary" href="tel:+393397858885">Prenota al 339 785 8885</a>
-          <p class="hero-note">Chiamata diretta · Info e appuntamenti con Christian Mero</p>
-        </div>
       </div>
-      <div class="hero-image">
-        <img src="imgs/flyer.jpg" alt="Trattamenti del benessere Christian Mero">
-      </div>
-    </section>
 
-    <!-- SERVIZI -->
-    <section class="section">
-      <h2>Trattamenti del Benessere</h2>
-      <p class="section-sub">
-        Scegli il trattamento più adatto alle tue esigenze. Possibilità di percorsi personalizzati.
+      <section class="treatments-layout">
+        <!-- Colonna sinistra trattamenti -->
+        <div class="treatments-col">
+          <ul>
+            <li>Decontratturante</li>
+            <li>Antistress Rilassante</li>
+            <li>Linfodrenante</li>
+            <li>Madoterapia</li>
+            <li>Hot stone massage (pietre calde)</li>
+            <li>Riflessologia plantare</li>
+          </ul>
+        </div>
+
+        <!-- Immagini centrali -->
+        <div class="treatments-gallery">
+          <!-- Sostituisci i nomi file con quelli reali nella cartella imgs -->
+          <figure>
+            <img src="imgs/flyer.jpg" alt="Trattamenti del benessere Christian Mero">
+          </figure>
+          <figure>
+            <img src="imgs/massaggio-1.jpg" alt="Massaggio rilassante">
+          </figure>
+          <figure>
+            <img src="imgs/massaggio-2.jpg" alt="Trattamento decontratturante">
+          </figure>
+        </div>
+
+        <!-- Colonna destra trattamenti -->
+        <div class="treatments-col">
+          <ul>
+            <li>Rilassamento Cervicale</li>
+            <li>Total body Combinato</li>
+            <li>Massaggio viso con pietre calde e bava di lumaca</li>
+            <li>Consulenze trattamenti corpo</li>
+            <li>Massaggio sportivo</li>
+          </ul>
+        </div>
+      </section>
+
+      <p class="appointment">
+        Si riceve solo su appuntamento per garantirti tranquillità, privacy e la massima attenzione.
       </p>
 
-      <div class="services-grid">
-        <div class="service-col">
-          <ul>
-            <li><strong>Decontratturante</strong> – per tensioni e rigidità muscolare.</li>
-            <li><strong>Antistress rilassante</strong> – per scaricare stanchezza e stress.</li>
-            <li><strong>Linfodrenante</strong> – per gambe leggere e drenaggio liquidi.</li>
-            <li><strong>Madoterapia</strong> – rimodellante con strumenti in legno.</li>
-            <li><strong>Hot stone massage</strong> (pietre calde).</li>
-            <li><strong>Riflessologia plantare</strong> – riequilibrio attraverso i piedi.</li>
-          </ul>
-        </div>
-        <div class="service-col">
-          <ul>
-            <li><strong>Rilassamento cervicale</strong> – per collo e spalle contratte.</li>
-            <li><strong>Total body combinato</strong> – trattamento completo su misura.</li>
-            <li><strong>Massaggio viso</strong> con pietre calde e bava di lumaca.</li>
-            <li><strong>Consulenze trattamenti corpo</strong> dedicate.</li>
-            <li><strong>Massaggio sportivo</strong> – per chi pratica attività fisica.</li>
-          </ul>
-        </div>
-      </div>
+      <section class="ambience">
+        <h2>Un ambiente rilassante, pensato per te</h2>
+        <p>
+          Luci soffuse, musica leggera e trattamenti studiati per farti uscire rigenerato nel corpo e nella mente.
+        </p>
+      </section>
     </section>
 
-    <!-- DOVE SIAMO -->
-    <section class="section section-alt">
+    <!-- DOVE TROVARMI + MAPPA -->
+    <section class="card card-alt">
       <div class="location">
-        <div>
+        <div class="location-text">
           <h2>Dove trovarmi</h2>
-          <p class="section-sub">
-            Via Chidro, 17 · Manduria (TA) <br>
-            <span class="muted">(presso Body Angel)</span>
+          <p class="location-address">
+            Via Chidro, 17 · Manduria (TA)<br>
+            <span class="muted">presso Body Angel</span>
           </p>
-          <p class="section-text">
-            Ricevo solo su appuntamento per garantirti tranquillità e massima attenzione.
+          <p class="location-note">
+            Lo studio è facilmente raggiungibile e dotato di un ambiente riservato, pensato per farti sentire a tuo agio.
           </p>
           <a class="btn-outline"
              href="https://www.google.com/maps/search/?api=1&query=Via+Chidro+17+Manduria"
@@ -87,41 +100,28 @@
             Apri in Google Maps
           </a>
         </div>
-        <div class="map-placeholder">
-          <!-- puoi sostituire con uno screenshot della mappa -->
-          <span>Via Chidro, 17 · Manduria</span>
+
+        <div class="map-embed">
+          <!-- Sostituisci SRC con il codice embed reale di Google Maps -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=INSERISCI_CODICE_EMBED_DI_VIA_CHIDRO_17"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </section>
 
-    <!-- GALLERIA -->
-    <section class="section">
-      <h2>Un ambiente rilassante, pensato per te</h2>
-      <p class="section-sub">
-        Luci soffuse, musica leggera e trattamenti studiati per farti uscire rigenerato.
-      </p>
-
-      <div class="gallery">
-        <figure>
-          <img src="imgs/massaggio-1.jpg" alt="Massaggio rilassante Manduria">
-        </figure>
-        <figure>
-          <img src="imgs/massaggio-2.jpg" alt="Trattamento decontratturante">
-        </figure>
-        <figure>
-          <img src="imgs/massaggio-3.jpg" alt="Dettagli studio benessere">
-        </figure>
-      </div>
-    </section>
-
     <!-- CTA FINALE -->
-    <section class="section section-cta">
+    <section class="card card-cta">
       <h2>Prenota il tuo trattamento</h2>
-      <p class="section-sub">
-        Parliamo delle tue esigenze e troviamo insieme il trattamento più adatto.
+      <p>
+        Parliamo delle tue esigenze e scegliamo insieme il percorso di benessere più adatto a te.
       </p>
       <a class="btn-primary btn-large" href="tel:+393397858885">
-        Chiama ora Christian · 339 785 8885
+        Chiama Christian · 339 785 8885
       </a>
       <p class="cta-note">
         Manduria · Via Chidro, 17 (Body Angel) · Solo su appuntamento
@@ -130,7 +130,7 @@
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Christian Mero · Trattamenti del Benessere · Manduria</p>
+    <p>© <span id="year"></span> Christian Mero · Trattamenti del Benessere</p>
   </footer>
 
   <script>

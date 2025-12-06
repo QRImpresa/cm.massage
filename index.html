@@ -5,107 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Christian Mero · Trattamenti del Benessere</title>
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- Stili -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <!-- TOPBAR -->
-  <header class="lux-topbar">
-    <div class="lux-topbar-inner">
-      <div class="lux-brand">
-        <span class="lux-logo">CM</span>
-        <div class="lux-brand-text">
-          <span class="lux-name">Christian Mero</span>
-          <span class="lux-sub">Trattamenti del Benessere</span>
-        </div>
-      </div>
-      <a class="lux-call" href="tel:+393397858885">Chiama ora</a>
-    </div>
+  <!-- ======================= -->
+  <!--         TITOLO          -->
+  <!-- ======================= -->
+  <header class="hero-title-block">
+    <h1>Christian Mero · Trattamenti del Benessere</h1>
+    <p class="location">Manduria · Studio Benessere</p>
   </header>
 
-  <!-- HERO -->
-  <section class="lux-hero" style="background-image: url('imgs/hero-spa.jpg');">
-    <div class="lux-hero-inner">
-      <p class="lux-location">Manduria · Studio benessere</p>
-      <h1 class="lux-title">Trattamenti del Benessere</h1>
-      <p class="lux-subtitle">
-        Massaggi professionali per sciogliere tensioni, ridurre lo stress e ripristinare armonia psicofisica.
-      </p>
+  <!-- ======================= -->
+  <!--     IMMAGINE HERO       -->
+  <!-- ======================= -->
+  <section class="hero-image"></section>
+
+  <!-- ======================= -->
+  <!--     TESTO INTRO         -->
+  <!-- ======================= -->
+  <section class="intro-block">
+    <h2>Massaggi professionali</h2>
+    <p>
+      Sciogli tensioni, riduci lo stress e ristabilisci armonia psicofisica attraverso trattamenti
+      personalizzati e tecniche mirate.
+    </p>
+  </section>
+
+  <!-- ======================= -->
+  <!--     FORM + CTA          -->
+  <!-- ======================= -->
+  <section class="cta-form-block">
+    <div class="form-box">
+      <h3>Prenota il tuo trattamento</h3>
+
+      <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="tel" placeholder="Telefono" required>
+
+        <select required>
+          <option value="">Seleziona trattamento</option>
+          <option>Decontratturante</option>
+          <option>Antistress rilassante</option>
+          <option>Linfodrenante</option>
+          <option>Madoterapia</option>
+          <option>Hot Stone</option>
+          <option>Riflessologia plantare</option>
+          <option>Rilassamento cervicale</option>
+          <option>Massaggio sportivo</option>
+        </select>
+
+        <button type="submit" class="cta-btn">Invia richiesta</button>
+      </form>
+
+      <a class="cta-call" href="tel:+393397858885">
+        Oppure chiama direttamente: 339 785 8885
+      </a>
+
+      <p class="cta-note">Manduria · Via Chidro 17 (Body Angel) · Solo su appuntamento</p>
     </div>
   </section>
 
-  <main>
+  <!-- ======================= -->
+  <!-- 3 BOX (IMMAGINE + TESTO) -->
+  <!-- ======================= -->
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-img"></div>
+      <h3>Decontratturante</h3>
+      <p>Agisce su tensioni profonde e migliora la mobilità.</p>
+    </div>
 
-    <!-- TRATTAMENTI -->
-    <section class="lux-section">
-      <h2 class="lux-section-title">I trattamenti</h2>
-      <p class="lux-section-intro">
-        Percorsi studiati per favorire salute, relax e benessere attraverso tecniche mirate e approcci personalizzati.
-      </p>
+    <div class="feature-card">
+      <div class="feature-img"></div>
+      <h3>Antistress</h3>
+      <p>Tocco lento e avvolgente per ridurre ansia e fatica.</p>
+    </div>
 
-      <div class="lux-grid">
+    <div class="feature-card">
+      <div class="feature-img"></div>
+      <h3>Linfodrenante</h3>
+      <p>Favorisce il drenaggio dei liquidi in eccesso.</p>
+    </div>
+  </section>
 
-        <!-- COLONNA SINISTRA -->
-        <div class="lux-treat-col">
-          <article class="lux-treat-card"><h3>Decontratturante</h3><p>Agisce su tensioni muscolari profonde, migliorando mobilità e riducendo il dolore.</p></article>
+  <!-- ======================= -->
+  <!--     TESTIMONIANZE       -->
+  <!-- ======================= -->
+  <section class="testimonials">
+    <h2>Cosa dicono i clienti</h2>
 
-          <article class="lux-treat-card"><h3>Antistress rilassante</h3><p>Tocco lento e avvolgente per calmare corpo e mente, riducendo ansia e fatica.</p></article>
+    <div class="testi-card">
+      <p>“Massaggio incredibile, mi ha sciolto completamente la schiena. Consigliatissimo.”</p>
+      <span>– Cliente</span>
+    </div>
 
-          <article class="lux-treat-card"><h3>Linfodrenante</h3><p>Stimola il sistema linfatico favorendo il drenaggio dei liquidi in eccesso.</p></article>
+    <div class="testi-card">
+      <p>“Professionalità, pulizia e un’atmosfera rilassante. Tornerò sicuramente.”</p>
+      <span>– Cliente</span>
+    </div>
 
-          <article class="lux-treat-card"><h3>Madoterapia</h3><p>Rimodellamento tramite strumenti in legno per migliorare tono e circolazione.</p></article>
-        </div>
+    <div class="testi-card">
+      <p>“Esperienza top. Mi sento rinato.”</p>
+      <span>– Cliente</span>
+    </div>
+  </section>
 
-        <!-- GALLERY CENTRALE -->
-        <div class="lux-gallery">
-          <img src="imgs/flyer.jpg" alt="" class="lux-img"/>
-          <img src="imgs/massaggio-1.jpg" alt="" class="lux-img"/>
-          <img src="imgs/massaggio-2.jpg" alt="" class="lux-img"/>
-        </div>
-
-        <!-- COLONNA DESTRA -->
-        <div class="lux-treat-col">
-          <article class="lux-treat-card"><h3>Hot stone</h3><p>Pietre calde basaltiche per un rilassamento profondo e circolazione migliorata.</p></article>
-
-          <article class="lux-treat-card"><h3>Riflessologia plantare</h3><p>Pressioni mirate ai punti riflessi per riequilibrio energetico interno.</p></article>
-
-          <article class="lux-treat-card"><h3>Rilassamento cervicale</h3><p>Trattamento mirato a collo, trapezi e spalle per alleviare dolori e rigidità.</p></article>
-
-          <article class="lux-treat-card"><h3>Massaggio sportivo</h3><p>Ideale per chi pratica sport: recupero muscolare e prevenzione infortuni.</p></article>
-        </div>
-
-      </div>
-
-      <p class="lux-info">
-        Ricevo esclusivamente su appuntamento per garantire la massima attenzione e privacy.
-      </p>
-    </section>
-
-    <!-- CTA -->
-    <section class="lux-cta">
-      <h2>Prenota il tuo trattamento</h2>
-      <p>Scegliamo insieme il percorso più adatto alle tue esigenze.</p>
-      <a class="lux-cta-btn" href="tel:+393397858885">
-        Chiama Christian · 339 785 8885
-      </a>
-      <p class="lux-cta-note">
-        Manduria · Via Chidro, 17 (Body Angel) · Solo su appuntamento
-      </p>
-    </section>
-
-  </main>
-
-  <footer class="lux-footer">
-    <p>© <span id="year"></span> Christian Mero · Trattamenti del Benessere</p>
+  <!-- ======================= -->
+  <!--      SOCIAL SHARE       -->
+  <!-- ======================= -->
+  <footer class="social-block">
+    <h3>Condividi</h3>
+    <div class="social-line"></div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 
 </body>
 </html>

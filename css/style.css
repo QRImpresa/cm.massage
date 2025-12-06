@@ -265,3 +265,12 @@ body {
 
   .lux-title { font-size: 36px; }
 }
+.facebook-btn {
+    background: #1877f2; /* blu Facebook */
+    color: #fff;
+    border: none;
+}
+
+.facebook-btn:hover {
+    background: #0f5dc9;
+}

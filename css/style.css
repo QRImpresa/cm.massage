@@ -179,16 +179,18 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,.06);
 }
 
-/* Galleria centrale */
+/* ------------------------------
+   GALLERIA ORIZZONTALE
+------------------------------ */
 .lux-gallery {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 22px;
 }
 
 .lux-gallery img {
-  width: 100%;
-  height: 360px;
+  width: calc((100% - 44px) / 3); /* 3 immagini in una riga */
+  height: 260px;
   border-radius: var(--radius);
   object-fit: cover;
   box-shadow: 0 6px 14px rgba(0,0,0,.06);
@@ -252,7 +254,12 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .lux-gallery {
+    flex-direction: column;
+  }
+
   .lux-gallery img {
+    width: 100%;
     height: 220px;
   }
 

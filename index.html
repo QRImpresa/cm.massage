@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CM Massage – Esperienza Rilassante</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christian Mero · Trattamenti del Benessere</title>
 
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Stili -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
-    <!-- =========================== -->
-    <!--       HEADER / HERO         -->
-    <!-- =========================== -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Massaggi Professionali per il Tuo Benessere</h1>
-            <p class="hero-text">Un’esperienza di totale relax, pensata per ristabilire equilibrio e armonia.</p>
+  <!-- TOPBAR -->
+  <header class="lux-topbar">
+    <div class="lux-topbar-inner">
+      <div class="lux-brand">
+        <span class="lux-logo">CM</span>
+        <div class="lux-brand-text">
+          <span class="lux-name">Christian Mero</span>
+          <span class="lux-sub">Trattamenti del Benessere</span>
+        </div>
+      </div>
+      <a class="lux-call" href="tel:+393397858885">Chiama ora</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="lux-hero" style="background-image: url('imgs/hero-spa.jpg');">
+    <div class="lux-hero-inner">
+      <p class="lux-location">Manduria · Studio benessere</p>
+      <h1 class="lux-title">Trattamenti del Benessere</h1>
+      <p class="lux-subtitle">
+        Massaggi professionali per sciogliere tensioni, ridurre lo stress e ripristinare armonia psicofisica.
+      </p>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- TRATTAMENTI -->
+    <section class="lux-section">
+      <h2 class="lux-section-title">I trattamenti</h2>
+      <p class="lux-section-intro">
+        Percorsi studiati per favorire salute, relax e benessere attraverso tecniche mirate e approcci personalizzati.
+      </p>
+
+      <div class="lux-grid">
+
+        <!-- COLONNA SINISTRA -->
+        <div class="lux-treat-col">
+          <article class="lux-treat-card"><h3>Decontratturante</h3><p>Agisce su tensioni muscolari profonde, migliorando mobilità e riducendo il dolore.</p></article>
+
+          <article class="lux-treat-card"><h3>Antistress rilassante</h3><p>Tocco lento e avvolgente per calmare corpo e mente, riducendo ansia e fatica.</p></article>
+
+          <article class="lux-treat-card"><h3>Linfodrenante</h3><p>Stimola il sistema linfatico favorendo il drenaggio dei liquidi in eccesso.</p></article>
+
+          <article class="lux-treat-card"><h3>Madoterapia</h3><p>Rimodellamento tramite strumenti in legno per migliorare tono e circolazione.</p></article>
         </div>
 
-        <!-- Immagine hero (segnaposto) -->
-        <div class="hero-image"></div>
-
-        <!-- FORM -->
-        <div class="hero-form">
-            <h3>Prenota ora</h3>
-            <form>
-                <input type="text" placeholder="Nome" required>
-                <input type="tel" placeholder="Telefono" required>
-                <select required>
-                    <option>Seleziona massaggio</option>
-                    <option>Massaggio rilassante</option>
-                    <option>Massaggio decontratturante</option>
-                    <option>Massaggio cervicale</option>
-                </select>
-                <button type="submit" class="cta">Prenota Subito</button>
-            </form>
-        </div>
-    </header>
-
-
-    <!-- =========================== -->
-    <!--  3 ICONE + TESTO (SERVIZI)  -->
-    <!-- =========================== -->
-    <section class="services">
-        <div class="service-card">
-            <div class="service-img"></div>
-            <h3>Rilassamento</h3>
-            <p>Trattamento completo per sciogliere tensioni e rigenerare corpo e mente.</p>
+        <!-- GALLERY CENTRALE -->
+        <div class="lux-gallery">
+          <img src="imgs/flyer.jpg" alt="" class="lux-img"/>
+          <img src="imgs/massaggio-1.jpg" alt="" class="lux-img"/>
+          <img src="imgs/massaggio-2.jpg" alt="" class="lux-img"/>
         </div>
 
-        <div class="service-card">
-            <div class="service-img"></div>
-            <h3>Benessere</h3>
-            <p>Migliora la circolazione e favorisce uno stato di calma profonda.</p>
+        <!-- COLONNA DESTRA -->
+        <div class="lux-treat-col">
+          <article class="lux-treat-card"><h3>Hot stone</h3><p>Pietre calde basaltiche per un rilassamento profondo e circolazione migliorata.</p></article>
+
+          <article class="lux-treat-card"><h3>Riflessologia plantare</h3><p>Pressioni mirate ai punti riflessi per riequilibrio energetico interno.</p></article>
+
+          <article class="lux-treat-card"><h3>Rilassamento cervicale</h3><p>Trattamento mirato a collo, trapezi e spalle per alleviare dolori e rigidità.</p></article>
+
+          <article class="lux-treat-card"><h3>Massaggio sportivo</h3><p>Ideale per chi pratica sport: recupero muscolare e prevenzione infortuni.</p></article>
         </div>
 
-        <div class="service-card">
-            <div class="service-img"></div>
-            <h3>Equilibrio</h3>
-            <p>Sessione dedicata all’allineamento energetico e alla respirazione.</p>
-        </div>
+      </div>
+
+      <p class="lux-info">
+        Ricevo esclusivamente su appuntamento per garantire la massima attenzione e privacy.
+      </p>
     </section>
 
-
-    <!-- =========================== -->
-    <!--        TESTIMONIANZE        -->
-    <!-- =========================== -->
-    <section class="testimonials">
-        <h2>Cosa dicono i clienti</h2>
-
-        <div class="testimonial-box">
-            <p>“Massaggio incredibile, mi ha sciolto completamente la schiena. Consigliatissimo.”</p>
-            <span>– Cliente 1</span>
-        </div>
-
-        <div class="testimonial-box">
-            <p>“Professionalità, pulizia e un’atmosfera rilassante. Tornerò sicuramente.”</p>
-            <span>– Cliente 2</span>
-        </div>
-
-        <div class="testimonial-box">
-            <p>“Esperienza top. Mi sento rinato.”</p>
-            <span>– Cliente 3</span>
-        </div>
+    <!-- CTA -->
+    <section class="lux-cta">
+      <h2>Prenota il tuo trattamento</h2>
+      <p>Scegliamo insieme il percorso più adatto alle tue esigenze.</p>
+      <a class="lux-cta-btn" href="tel:+393397858885">
+        Chiama Christian · 339 785 8885
+      </a>
+      <p class="lux-cta-note">
+        Manduria · Via Chidro, 17 (Body Angel) · Solo su appuntamento
+      </p>
     </section>
 
+  </main>
 
-    <!-- =========================== -->
-    <!--        SOCIAL SHARE         -->
-    <!-- =========================== -->
-    <footer class="social">
-        <h3>Condividi</h3>
-        <div class="social-line"></div>
-    </footer>
+  <footer class="lux-footer">
+    <p>© <span id="year"></span> Christian Mero · Trattamenti del Benessere</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>

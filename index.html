@@ -126,6 +126,26 @@
       </p>
     </section>
 
+    <!-- ========================= -->
+    <!--       CAROSELLO IMG       -->
+    <!-- ========================= -->
+    <section class="lux-carousel-section">
+      <h2 class="lux-section-title" style="text-align:center;">Galleria</h2>
+
+      <div class="lux-carousel">
+        <div class="lux-carousel-track">
+          <img src="imgs/img1.jpg" alt="">
+          <img src="imgs/img2.jpg" alt="">
+          <img src="imgs/img3.jpg" alt="">
+          <img src="imgs/img4.jpg" alt="">
+          <img src="imgs/img5.jpg" alt="">
+        </div>
+
+        <button class="lux-carousel-btn prev">&#10094;</button>
+        <button class="lux-carousel-btn next">&#10095;</button>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="lux-cta">
       <h2>Prenota il tuo trattamento</h2>
@@ -135,13 +155,13 @@
         Chiama · 339 785 8885
       </a>
 
-
-</a>
       <p class="lux-cta-note">Via Chidro 17, Manduria (presso Body Angel) · Solo su appuntamento</p>
     </section>
-   <a href="https://www.facebook.com/profile.php?id=61584383082518" class="lux-btn facebook-btn" target="_blank">
-    Facebook
-      
+
+    <a href="https://www.facebook.com/profile.php?id=61584383082518" class="lux-btn facebook-btn" target="_blank">
+      Facebook
+    </a>
+
   </main>
 
   <footer class="lux-footer">
@@ -150,6 +170,27 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!-- SCRIPT CAROSELLO -->
+  <script>
+    const track = document.querySelector('.lux-carousel-track');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    let index = 0;
+
+    nextBtn.addEventListener('click', () => {
+      index++;
+      if (index >= track.children.length) index = 0;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    });
+
+    prevBtn.addEventListener('click', () => {
+      index--;
+      if (index < 0) index = track.children.length - 1;
+      track.style.transform = `translateX(-${index * 100}%)`;
+    });
   </script>
 
 </body>

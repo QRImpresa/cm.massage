@@ -129,7 +129,7 @@ body {
    TRATTAMENTI
 ------------------------------ */
 .lux-section {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 80px auto;
   padding: 0 20px;
 }
@@ -149,11 +149,11 @@ body {
   font-size: 17px;
 }
 
+/* Griglia ora SOLO colonne verticali */
 .lux-grid {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: 1fr 0.8fr 1fr;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 /* Card singola */
@@ -175,23 +175,6 @@ body {
   transform: translateY(-5px);
   border-color: var(--gold);
   box-shadow: 0 10px 20px rgba(0,0,0,.06);
-}
-
-/* ------------------------------
-   GALLERIA ORIZZONTALE
------------------------------- */
-.lux-gallery {
-  display: flex;
-  flex-direction: row;
-  gap: 22px;
-}
-
-.lux-gallery img {
-  width: calc((100% - 44px) / 3);
-  height: 260px;
-  border-radius: var(--radius);
-  object-fit: cover;
-  box-shadow: 0 6px 14px rgba(0,0,0,.06);
 }
 
 /* ------------------------------
@@ -237,48 +220,10 @@ body {
 }
 
 /* ------------------------------
-   ANIMAZIONI
------------------------------- */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ------------------------------
-   RESPONSIVE
------------------------------- */
-@media (max-width: 900px) {
-  .lux-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .lux-gallery {
-    flex-direction: column;
-  }
-
-  .lux-gallery img {
-    width: 100%;
-    height: 220px;
-  }
-
-  .lux-title { font-size: 36px; }
-}
-
-.facebook-btn {
-  background: #1877f2;
-  color: #fff;
-  border: none;
-}
-
-.facebook-btn:hover {
-  background: #0f5dc9;
-}
-
-/* ------------------------------
    CAROSELLO IMMAGINI
 ------------------------------ */
 .lux-carousel-section {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 80px auto;
   padding: 0 20px;
 }
@@ -322,8 +267,33 @@ body {
 .lux-carousel-btn.prev { left: 10px; }
 .lux-carousel-btn.next { right: 10px; }
 
+/* ------------------------------
+   ANIMAZIONI
+------------------------------ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 900px) {
+  .lux-title { font-size: 36px; }
+}
+
 @media (max-width: 600px) {
   .lux-carousel-track img {
     height: 220px;
   }
+}
+
+.facebook-btn {
+  background: #1877f2;
+  color: #fff;
+  border: none;
+}
+
+.facebook-btn:hover {
+  background: #0f5dc9;
 }

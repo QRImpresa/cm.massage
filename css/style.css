@@ -185,8 +185,8 @@ body {
 /* INFO */
 .lux-info {
   text-align: center;
-  margin-top: 40px;
-  color: var(--muted);
+  margin-top: 50px;
+  color: var(--dark);
 }
 
 /* -------------------------------------------------
